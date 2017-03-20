@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="quizForm" onsubmit="return submitAnswers()">
+        <p>1. Are you an.......?</p>
+        <input type="radio" name="question1" value="a" id="q1a">introvert? <br>
+        <input type="radio" name="question1" value="b" id="q1b">extrovert? <br>
+
+        <p>2. Pick a movie!</p> 
+        <input type="radio" name="question2" value="a" id="q2a">Ratatouille <br>
+        <input type="radio" name="question2" value="b" id="q2b">Jurassic Park <br>
+        <input type="radio" name="question2" value="c" id="q2c">Interstellar <br>
+        <input type="radio" name="question2" value="d" id="q2d">Scary Movie <br>
+        <input type="radio" name="question2" value="e" id="q2e">Les Miserables <br>
+        <input type="radio" name="question2" value="f" id="q2f">The Notebook<br><br>
+
+        <p>3. Who would you date?</p>
+        <input type="radio" name="question3" value="a" id="q3a">Someone with unique personality <br>
+        <input type="radio" name="question3" value="b" id="q3b">Someone with same interest <br>
+        <input type="radio" name="question3" value="c" id="q3c">Hot is a MUST <br>
+        <input type="radio" name="question3" value="d" id="q3d">A good cook! <br>
+        <input type="radio" name="question3" value="e" id="q3e">Anyone, no preference<br>
+        <input type="radio" name="question3" value="f" id="q3f">Not interested <br><br>
+
+        <p>4. Where would you go on a first date?</p>
+        <input type="radio" name="question4" value="a" id="q4a">Museum<br>
+        <input type="radio" name="question4" value="b" id="q4b">Fancy restaurant <br>
+        <input type="radio" name="question4" value="c" id="q4c">Music festival <br>
+        <input type="radio" name="question4" value="d" id="q4d">Watching sunset <br>
+        <input type="radio" name="question4" value="e" id="q4e">Netflix & chill<br>
+        <input type="radio" name="question4" value="f" id="q4f">Coffee shop <br><br>
+
+        <p>5. Among your friends, you are the....</p>
+        <input type="radio" name="question5" value="a" id="q5a">listener<br>
+        <input type="radio" name="question5" value="b" id="q5b">loaner <br>
+        <input type="radio" name="question5" value="c" id="q5c">eater <br>
+        <input type="radio" name="question5" value="d" id="q5d">borrower <br>
+        <input type="radio" name="question5" value="e" id="q5e">organizer<br>
+        <input type="radio" name="question5" value="f" id="q5f">adviser <br><br>
+
+        <p>6. Pick a pet</p>
+        <input type="radio" name="question6" value="a" id="q6a">Dog<br>
+        <input type="radio" name="question6" value="b" id="q6b">cat <br>
+        <input type="radio" name="question6" value="c" id="q6c">Rabbit <br>
+        <input type="radio" name="question6" value="d" id="q6d">Parrot <br>
+        <input type="radio" name="question6" value="e" id="q6e">Monkey<br>
+        <input type="radio" name="question6" value="f" id="q6f">Raccoon <br><br>
+
+
+        <p>7. Pick a TV show </p>
+        <input type="radio" name="question7" value="a" id="q7a">The Simpsons<br>
+        <input type="radio" name="question7" value="b" id="q7b">Two Broke Girls <br>
+        <input type="radio" name="question7" value="c" id="q7c">Black Mirror <br>
+        <input type="radio" name="question7" value="d" id="q7d">Vampire Diaries <br>
+        <input type="radio" name="question7" value="e" id="q7e">Big Bang Theory<br>
+        <input type="radio" name="question7" value="f" id="q7f">Hell's Kitchen' <br><br>
+
+
+        <p>8. What would you do on your last day on earth?</p>
+        <input type="radio" name="question8" value="a" id="q8a">Be alone<br>
+        <input type="radio" name="question8" value="b" id="q8b">Dig your own grave <br>
+        <input type="radio" name="question8" value="c" id="q8c">Make dinner for family and friends <br>
+        <input type="radio" name="question8" value="d" id="q8d">Spend alone time with your partner <br>
+        <input type="radio" name="question8" value="e" id="q8e">Go on a date for the last time<br>
+        <input type="radio" name="question8" value="f" id="q8f">Party and get wasted <br><br>
+
+        <p>9. If you won the lottery, what will you do?</p>
+        <input type="radio" name="question9" value="a" id="q9a">Shopping Galore!!<br>
+        <input type="radio" name="question9" value="b" id="q9b">Buy a million dollar home <br>
+        <input type="radio" name="question9" value="c" id="q9c">Treat the whole town for drinks <br>
+        <input type="radio" name="question9" value="d" id="q9d">Open up your own business <br>
+        <input type="radio" name="question9" value="e" id="q9e">Donate half to charity<br>
+        <input type="radio" name="question9" value="f" id="q9f">Just put them in the bank and save<br><br>
+
+
+        <p>10. Pick a beverage</p>
+        <input type="radio" name="question10" value="a" id="q10a">Soda<br>
+        <input type="radio" name="question10" value="b" id="q10b">Beer <br>
+        <input type="radio" name="question10" value="c" id="q10c">Fruit juice <br>
+        <input type="radio" name="question10" value="d" id="q10d">Cocktail <br>
+        <input type="radio" name="question10" value="e" id="q10e">Coffee<br>
+        <input type="radio" name="question10" value="f" id="q10f">Water <br><br>
+
+        <p>11. Your greatest fear?</p>
+        <input type="radio" name="question11" value="a" id="q11a">Failure<br>
+        <input type="radio" name="question11" value="b" id="q11b">Bankruptcy <br>
+        <input type="radio" name="question11" value="c" id="q11c">Responsibility <br>
+        <input type="radio" name="question11" value="d" id="q11d">To be cheated on <br>
+        <input type="radio" name="question11" value="e" id="q11e">World's end<br>
+        <input type="radio" name="question11" value="f" id="q11f">Marrying the wrong person <br><br>
+
+        <input type="submit" value="Submit Answers">
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>script/js.js</script>
+</body>
+</html>
