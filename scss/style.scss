@@ -2,6 +2,136 @@
 
 @import 'partials/variables';
 
-body{
+ .wrapper{
+    max-width: 1100px;
+    width: 80%;
     margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+
+.home{
+    background-image: url('../assets/friendsTitle.jpg');
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+
+
+    
+    .home-btn{
+        margin: 0 auto;
+        padding: 0 auto;
+        font-family: 'Baloo Bhaina', cursive;
+        text-transform: uppercase;
+        position: absolute;
+        top: 60%;
+        background-color: #A9AEB2;
+        border: 4px solid #FFF;
+        border-radius: 10px;
+        padding: 20px 35px;
+        font-size: 30px;
+        box-shadow: 10px 10px 5px rgba(192,192,192,0.2);
+        
+    }
+
+   
+}
+
+
+.quiz{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background:linear-gradient( rgba(171, 168, 178, 0.7),rgba(171, 168, 178, 0.7)), url('../assets/friendsCards.jpg');
+    background-size: 50%;
+
+    form{
+        padding: 20px;
+    
+        p:first-child{
+            margin-top: 0;
+            padding-top: 5%;
+        }
+
+        p{
+                font-family: $friendsFont;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                font-size: 50px;
+                line-height: 2em;
+
+                span{
+                    color: #FCFCFC;
+                    border-bottom: 5px solid #000EFF;
+                }
+
+            }
+
+        .container{
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 20%;
+                    
+            input[type="radio"]{
+                display: none;
+            }
+
+            label{
+                font-family: 'Roboto', sans-serif;
+                margin: 20px;
+                text-transform: uppercase;
+                padding: 20px 30px;
+                border: 2px solid transparent;
+                border-radius: 20px; 
+                transition: 0.5s ease-in-out;
+                width: auto;
+                line-height: 1.2em;
+
+
+                img{
+                    width: 220px;
+                    height: 180px;
+                }
+
+            }
+            label:hover{
+                border: 2px solid #FFE503;
+                cursor: pointer
+            }
+            input[type="radio"]:checked+label{
+                transition: 0.5s ease-in-out;
+                border: 2px solid #E03735;
+                background-color: white;
+            }
+            
+        }
+        .third, .fourth, .fifth, .eighth, .ninth, .tenth, .eleventh{
+            label{
+                width: 28%;
+            }
+        }
+        input[type="submit"]{
+            padding: 15px 30px;
+            font-family: 'Baloo Bhaina', cursive;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 10%;
+            border: 5px solid #FFF;
+            border-radius: 5px;
+            background: beige;
+            transition: 0.5s ease-in-out;
+        }
+        input[type="submit"]:hover{
+            background: #FFF;
+            border: 5px solid beige; 
+        }
+    }
+
 }

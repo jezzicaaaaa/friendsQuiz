@@ -6,3 +6,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+@font-face {
+    font-family: 'friendsFont';
+    src: url('../assets/friendsFont.TTF');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}

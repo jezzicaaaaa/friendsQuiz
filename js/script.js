@@ -1,3 +1,11 @@
+$(function(){
+    $('.quiz').hide();
+    $('.home-btn').click(function(){
+        $('.home').hide();
+        $('.quiz').fadeIn();
+    });
+});
+
 
 function submitAnswers(){
 

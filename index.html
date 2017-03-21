@@ -4,100 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Friends Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form name="quizForm" onsubmit="return submitAnswers()">
-        <p>1. Are you an.......?</p>
-        <input type="radio" name="question1" value="a" id="q1a">introvert? <br>
-        <input type="radio" name="question1" value="b" id="q1b">extrovert? <br>
+    <section class="home">
+        <div class="wrapper">
+            <button class="home-btn">Start Quiz</button>
+            
+        </div>
 
-        <p>2. Pick a movie!</p> 
-        <input type="radio" name="question2" value="a" id="q2a">Ratatouille <br>
-        <input type="radio" name="question2" value="b" id="q2b">Jurassic Park <br>
-        <input type="radio" name="question2" value="c" id="q2c">Interstellar <br>
-        <input type="radio" name="question2" value="d" id="q2d">Scary Movie <br>
-        <input type="radio" name="question2" value="e" id="q2e">Les Miserables <br>
-        <input type="radio" name="question2" value="f" id="q2f">The Notebook<br><br>
+    </section>
+    <section class="quiz">
+        <div class="wrapper">
+            <form name="quizForm" onsubmit="return submitAnswers()">
+                
+                <p>Are   <span>you</span>   an _________?</p>
+                <div class="first container">
+                    <input type="radio" name="question1" value="a" id="q1a">
+                        <label for="q1a">introvert</label><br>
+                    <input type="radio" name="question1" value="b" id="q1b">
+                        <label for="q1b">extrovert </label><br>
+                </div>
 
-        <p>3. Who would you date?</p>
-        <input type="radio" name="question3" value="a" id="q3a">Someone with unique personality <br>
-        <input type="radio" name="question3" value="b" id="q3b">Someone with same interest <br>
-        <input type="radio" name="question3" value="c" id="q3c">Hot is a MUST <br>
-        <input type="radio" name="question3" value="d" id="q3d">A good cook! <br>
-        <input type="radio" name="question3" value="e" id="q3e">Anyone, no preference<br>
-        <input type="radio" name="question3" value="f" id="q3f">Not interested <br><br>
+                <p>Pick   a   <span>movie</span>!</p> 
+                <div class="second container">   
+                    <input type="radio" name="question2" value="a" id="q2a">
+                        <label for="q2a"><img src="../assets/ratatouille.jpeg"><br>ratatouille</label> <br>
+                    <input type="radio" name="question2" value="b" id="q2b">
+                         <label for="q2b"><img src="../assets/jurassic.jpg"><br>Jurassic Park </label>
+                    <input type="radio" name="question2" value="c" id="q2c">
+                        <label for="q2c"><img src="../assets/interstellar.jpg"><br>Interstellar </label>
+                    <input type="radio" name="question2" value="d" id="q2d">
+                         <label for="q2d"><img src="../assets/scary-movie.jpg"><br>Scary Movie </label>
+                    <input type="radio" name="question2" value="e" id="q2e">
+                         <label for="q2e"><img src="../assets/lesMiserables.jpg"><br>Les Miserables </label>
+                    <input type="radio" name="question2" value="f" id="q2f">
+                         <label for="q2f"><img src="../assets/theNotebook.jpg"><br>The Notebook</label><br>
+                </div>                
 
-        <p>4. Where would you go on a first date?</p>
-        <input type="radio" name="question4" value="a" id="q4a">Museum<br>
-        <input type="radio" name="question4" value="b" id="q4b">Fancy restaurant <br>
-        <input type="radio" name="question4" value="c" id="q4c">Music festival <br>
-        <input type="radio" name="question4" value="d" id="q4d">Watching sunset <br>
-        <input type="radio" name="question4" value="e" id="q4e">Netflix & chill<br>
-        <input type="radio" name="question4" value="f" id="q4f">Coffee shop <br><br>
+                <p>Who   would   you   <span>date?</span></p>
+                <div class="third container">
+                    <input type="radio" name="question3" value="a" id="q3a">
+                         <label for="q3a">Someone with unique personality </label><br>
+                    <input type="radio" name="question3" value="b" id="q3b">
+                         <label for="q3b">Someone with same interest </label><br>
+                    <input type="radio" name="question3" value="c" id="q3c">
+                         <label for="q3c">Hot is a MUST</label>
+                    <input type="radio" name="question3" value="d" id="q3d">
+                         <label for="q3d">A good cook!</label> <br>
+                    <input type="radio" name="question3" value="e" id="q3e">
+                         <label for="q3e">Anyone, no preference</label><br>
+                    <input type="radio" name="question3" value="f" id="q3f">
+                         <label for="q3f">Not interested</label> <br><br>
+                </div>
 
-        <p>5. Among your friends, you are the....</p>
-        <input type="radio" name="question5" value="a" id="q5a">listener<br>
-        <input type="radio" name="question5" value="b" id="q5b">loaner <br>
-        <input type="radio" name="question5" value="c" id="q5c">eater <br>
-        <input type="radio" name="question5" value="d" id="q5d">borrower <br>
-        <input type="radio" name="question5" value="e" id="q5e">organizer<br>
-        <input type="radio" name="question5" value="f" id="q5f">adviser <br><br>
+                <p>Where   would   you   go   on   a   <span>first   date</span>?</p>
+                <div class="fourth container">
+                    <input type="radio" name="question4" value="a" id="q4a">
+                         <label for="q4a">Museum</label><br>
+                    <input type="radio" name="question4" value="b" id="q4b">
+                         <label for="q4b">Fancy restaurant </label><br>
+                    <input type="radio" name="question4" value="c" id="q4c">
+                         <label for="q4c">Music festival</label> <br>
+                    <input type="radio" name="question4" value="d" id="q4d">
+                         <label for="q4d">Watching sunset</label> <br>
+                    <input type="radio" name="question4" value="e" id="q4e">
+                         <label for="q4e">Netflix & chill</label><br>
+                    <input type="radio" name="question4" value="f" id="q4f">
+                         <label for="q4f">Coffee shop</label> <br><br>
+                </div>
 
-        <p>6. Pick a pet</p>
-        <input type="radio" name="question6" value="a" id="q6a">Dog<br>
-        <input type="radio" name="question6" value="b" id="q6b">cat <br>
-        <input type="radio" name="question6" value="c" id="q6c">Rabbit <br>
-        <input type="radio" name="question6" value="d" id="q6d">Parrot <br>
-        <input type="radio" name="question6" value="e" id="q6e">Monkey<br>
-        <input type="radio" name="question6" value="f" id="q6f">Raccoon <br><br>
+                    <p>Among   your   <span>friends</span>,   you   are   the....</p>
+                    <div class="fifth container">
+                    <input type="radio" name="question5" value="a" id="q5a">
+                         <label for="q5a">listener</label><br>
+                    <input type="radio" name="question5" value="b" id="q5b">
+                         <label for="q5b">loaner </label><br>
+                    <input type="radio" name="question5" value="c" id="q5c">
+                         <label for="q5c">eater </label><br>
+                    <input type="radio" name="question5" value="d" id="q5d">
+                         <label for="q5d">borrower </label><br>
+                    <input type="radio" name="question5" value="e" id="q5e">
+                         <label for="q5e">organizer</label><br>
+                    <input type="radio" name="question5" value="f" id="q5f">
+                         <label for="q5f">adviser </label><br><br>
+                </div>
+
+                <p>Pick   a   <span>pet</span></p>
+                <div class="sixth container">
+                    <input type="radio" name="question6" value="a" id="q6a">
+                         <label for="q6a"><img src="../assets/dog.jpg"><br>Dog</label>
+                    <input type="radio" name="question6" value="b" id="q6b">
+                         <label for="q6b"><img src="../assets/cat.jpg"><br>cat </label>
+                    <input type="radio" name="question6" value="c" id="q6c">
+                         <label for="q6c"><img src="../assets/rabbit.jpg"><br>Rabbit </label>
+                    <input type="radio" name="question6" value="d" id="q6d">
+                         <label for="q6d"><img src="../assets/parrot.jpg"><br>Parrot </label>
+                    <input type="radio" name="question6" value="e" id="q6e">
+                         <label for="q6e"><img src="../assets/monkey.jpg"><br>Monkey</label>
+                    <input type="radio" name="question6" value="f" id="q6f">
+                         <label for="q6f"><img src="../assets/raccoon.jpg"><br>Raccoon </label><br>
+                </div>
+
+                <p>Pick   a   <span>TV   show</span> </p>
+                <div class="seventh container">
+                    <input type="radio" name="question7" value="a" id="q7a">
+                         <label for="q7a"><img src="../assets/simpsons.jpg"><br>The Simpsons</label><br>
+                    <input type="radio" name="question7" value="b" id="q7b">
+                         <label for="q7b"><img src="../assets/brokeGirls.jpg"><br>Two Broke Girls </label><br>
+                    <input type="radio" name="question7" value="c" id="q7c">
+                         <label for="q7c"><img src="../assets/blackMirror.png"><br>Black Mirror</label> <br>
+                    <input type="radio" name="question7" value="d" id="q7d">
+                         <label for="q7d"><img src="../assets/vampire.jpg"><br>The Vampire Diaries</label> <br>
+                    <input type="radio" name="question7" value="e" id="q7e">
+                         <label for="q7e"><img src="../assets/bigbang.jpg"><br>The Big Bang Theory</label><br>
+                    <input type="radio" name="question7" value="f" id="q7f">
+                         <label for="q7f"><img src="../assets/hell.jpg"><br>Hell's Kitchen' </label><br><br>
+                </div>
+
+                <p>What   would   you   do   on   your   <span>last  day</span>   on   earth?</p>
+                <div class="eighth container">
+                    <input type="radio" name="question8" value="a" id="q8a">
+                         <label for="q8a">Be alone</label><br>
+                    <input type="radio" name="question8" value="b" id="q8b">
+                         <label for="q8b">Dig your own grave </label><br>
+                    <input type="radio" name="question8" value="c" id="q8c">
+                         <label for="q8c">Make dinner for family and friends </label><br>
+                    <input type="radio" name="question8" value="d" id="q8d">
+                        <label for="q8d">Spend alone time with your partner</label> <br>
+                    <input type="radio" name="question8" value="e" id="q8e">
+                        <label for="q8e">Go on a date for the last time</label><br>
+                    <input type="radio" name="question8" value="f" id="q8f">
+                        <label for="q8f">Party and get wasted </label><br><br>
+                </div>
+
+                <p>If   you   won   the   <span>lottery</span>,   what   will   you   do?</p>
+                <div class="ninth container">
+                    <input type="radio" name="question9" value="a" id="q9a">
+                        <label for="q9a">Shopping Galore!!</label><br>
+                    <input type="radio" name="question9" value="b" id="q9b">
+                        <label for="q9b">Buy a million dollar home </label><br>
+                    <input type="radio" name="question9" value="c" id="q9c">
+                        <label for="q9c">Treat the whole town for drinks</label> <br>
+                    <input type="radio" name="question9" value="d" id="q9d">
+                        <label for="q9d">Open up your own business</label> <br>
+                    <input type="radio" name="question9" value="e" id="q9e">
+                        <label for="q9e">Donate half to charity</label><br>
+                    <input type="radio" name="question9" value="f" id="q9f">
+                        <label for="q9f">Just put them in the bank and save</label><br><br>
+                </div>
+
+                <p>Pick   a   <span>beverage</span></p>
+                <div class="tenth container">
+                    <input type="radio" name="question10" value="a" id="q10a">
+                        <label for="q10a">Soda</label><br>
+                    <input type="radio" name="question10" value="b" id="q10b">
+                        <label for="q10b">Beer </label><br>
+                    <input type="radio" name="question10" value="c" id="q10c">
+                        <label for="q10c">Fruit juice</label> <br>
+                    <input type="radio" name="question10" value="d" id="q10d">
+                        <label for="q10d">Cocktail </label><br>
+                    <input type="radio" name="question10" value="e" id="q10e">
+                        <label for="q10e">Coffee</label><br>
+                    <input type="radio" name="question10" value="f" id="q10f">
+                        <label for="q10f">Water </label><br><br>
+                </div>
 
 
-        <p>7. Pick a TV show </p>
-        <input type="radio" name="question7" value="a" id="q7a">The Simpsons<br>
-        <input type="radio" name="question7" value="b" id="q7b">Two Broke Girls <br>
-        <input type="radio" name="question7" value="c" id="q7c">Black Mirror <br>
-        <input type="radio" name="question7" value="d" id="q7d">Vampire Diaries <br>
-        <input type="radio" name="question7" value="e" id="q7e">Big Bang Theory<br>
-        <input type="radio" name="question7" value="f" id="q7f">Hell's Kitchen' <br><br>
+                <p>Your   greatest   <span>fear</span>?</p>
+                <div class="eleventh container">
+                    <input type="radio" name="question11" value="a" id="q11a">
+                        <label for="q11a">Failure</label><br>
+                    <input type="radio" name="question11" value="b" id="q11b">
+                        <label for="q11b">Bankruptcy</label> <br>
+                    <input type="radio" name="question11" value="c" id="q11c">
+                        <label for="q11c">Responsibility</label> <br>
+                    <input type="radio" name="question11" value="d" id="q11d">
+                        <label for="q11d">To be cheated on </label><br>
+                    <input type="radio" name="question11" value="e" id="q11e">
+                        <label for="q11e">World's end</label><br>
+                    <input type="radio" name="question11" value="f" id="q11f">
+                        <label for="q11f">Marrying the wrong person</label> <br><br>
+                </div>
 
 
-        <p>8. What would you do on your last day on earth?</p>
-        <input type="radio" name="question8" value="a" id="q8a">Be alone<br>
-        <input type="radio" name="question8" value="b" id="q8b">Dig your own grave <br>
-        <input type="radio" name="question8" value="c" id="q8c">Make dinner for family and friends <br>
-        <input type="radio" name="question8" value="d" id="q8d">Spend alone time with your partner <br>
-        <input type="radio" name="question8" value="e" id="q8e">Go on a date for the last time<br>
-        <input type="radio" name="question8" value="f" id="q8f">Party and get wasted <br><br>
-
-        <p>9. If you won the lottery, what will you do?</p>
-        <input type="radio" name="question9" value="a" id="q9a">Shopping Galore!!<br>
-        <input type="radio" name="question9" value="b" id="q9b">Buy a million dollar home <br>
-        <input type="radio" name="question9" value="c" id="q9c">Treat the whole town for drinks <br>
-        <input type="radio" name="question9" value="d" id="q9d">Open up your own business <br>
-        <input type="radio" name="question9" value="e" id="q9e">Donate half to charity<br>
-        <input type="radio" name="question9" value="f" id="q9f">Just put them in the bank and save<br><br>
+                <input type="submit" value="Submit Answers">
+            </form>
+        </div>
+    </section>
+    <section class="finalResults">
+        <div class="ross results">
 
 
-        <p>10. Pick a beverage</p>
-        <input type="radio" name="question10" value="a" id="q10a">Soda<br>
-        <input type="radio" name="question10" value="b" id="q10b">Beer <br>
-        <input type="radio" name="question10" value="c" id="q10c">Fruit juice <br>
-        <input type="radio" name="question10" value="d" id="q10d">Cocktail <br>
-        <input type="radio" name="question10" value="e" id="q10e">Coffee<br>
-        <input type="radio" name="question10" value="f" id="q10f">Water <br><br>
 
-        <p>11. Your greatest fear?</p>
-        <input type="radio" name="question11" value="a" id="q11a">Failure<br>
-        <input type="radio" name="question11" value="b" id="q11b">Bankruptcy <br>
-        <input type="radio" name="question11" value="c" id="q11c">Responsibility <br>
-        <input type="radio" name="question11" value="d" id="q11d">To be cheated on <br>
-        <input type="radio" name="question11" value="e" id="q11e">World's end<br>
-        <input type="radio" name="question11" value="f" id="q11f">Marrying the wrong person <br><br>
+        </div>
+        <div class="rachel results">
 
-        <input type="submit" value="Submit Answers">
-    </form>
+
+
+        </div>
+        <div class="monica results"></div>
+        <div class="chandleresults"></div>
+        <div class="joey results"></div>
+        <div class="phoebe results">
+
+            
+        </div>
+
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </body>
 </html>
