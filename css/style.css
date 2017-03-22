@@ -212,7 +212,7 @@ body {
         margin: 20px;
         text-transform: uppercase;
         padding: 20px 30px;
-        border: 2px solid transparent;
+        border: 3px solid transparent;
         border-radius: 20px;
         transition: 0.5s ease-in-out;
         width: auto;
@@ -221,11 +221,11 @@ body {
           width: 220px;
           height: 180px; }
       .quiz form .container label:hover {
-        border: 2px solid #FFE503;
+        border: 3px solid #FFE503;
         cursor: pointer; }
       .quiz form .container input[type="radio"]:checked + label {
         transition: 0.5s ease-in-out;
-        border: 2px solid #E03735;
+        border: 3px solid #E03735;
         background-color: white; }
     .quiz form .third label, .quiz form .fourth label, .quiz form .fifth label, .quiz form .eighth label, .quiz form .ninth label, .quiz form .tenth label, .quiz form .eleventh label {
       width: 28%; }
