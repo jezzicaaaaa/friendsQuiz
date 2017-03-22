@@ -11,40 +11,100 @@
 }
 
 .home{
-    background-image: url('../assets/friendsTitle.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../assets/friendsFormal.jpg');
     background-position: top;
     background-size: cover;
     height: 100vh;
     text-align: center;
 
-
-    
-    .home-btn{
+    .home-content{
+        margin-top: 0;
         margin: 0 auto;
-        padding: 0 auto;
-        font-family: 'Baloo Bhaina', cursive;
-        text-transform: uppercase;
-        position: absolute;
-        top: 60%;
-        background-color: #A9AEB2;
-        border: 4px solid #FFF;
-        border-radius: 10px;
-        padding: 20px 35px;
-        font-size: 30px;
-        box-shadow: 10px 10px 5px rgba(192,192,192,0.2);
-        
+        padding: 20px;;
+        display: flex;
+        flex-direction: column;
+
+        .who{
+            margin-top: 0;
+            font-family: $roboto;
+            font-size: 30px;
+            padding-top: 25%;
+            color: #E9F1F7;
+            text-transform: uppercase;
+            font-weight: 0;
+            letter-spacing: 2px;
+        }
+        img{
+            margin: 30px;
+        }
+        // .friends{
+        //     font-family: $friendsFont;
+        //     letter-spacing: 1em;
+        //     font-size: 70px;
+        //     color: #E9F1F7;
+        // }
+            
+        // #r:before, #e:after{
+        //     background: #ED213A;
+        //     content: "\A";
+        //     width: 10px;
+        //     height: 10px;
+        //     border-radius: 50%;
+        //     display: inline-block;
+        //     margin: 0 10px;
+        // }
+        // #r:after, #d:before{
+        //     background: #00ABE7;
+        //     content: "\A";
+        //     width: 10px;
+        //     height: 10px;
+        //     border-radius: 50%;
+        //     display: inline-block;
+        //     margin: 0 10px;
+        // }
+        // #e:before, #d:after{
+        //     background: #FABC16;
+        //     content: "\A";
+        //     width: 10px;
+        //     height: 10px;
+        //     border-radius: 50%;
+        //     display: inline-block;
+        //     margin-top: -0%;
+
+        .home-btn{
+            margin: 0 auto;
+            margin-top: 10%;
+            font-family: $roboto;
+            text-transform: uppercase;
+            background-color: transparent;
+            letter-spacing: 1px;
+            box-shadow: 10px 10px 5px rgba(192,192,192,0.2);
+            padding: 1.05rem 2.75rem;
+            color: #F0C808;
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            border-radius: 12rem;
+            border: .2rem solid #FFF;
+            -webkit-transition: color .3s,border .3s;
+            transition: color .3s,border .3s;
+        } 
+        .home-btn:hover{
+            color: #FFF;
+            border: .2rem solid #F0C808;
+        }
     }
 
    
 }
-
-
+// rgba(171, 168, 178, 0.7),rgba(171, 168, 178, 0.7)
+// rgba(136, 150, 171, 1)
 .quiz{
     margin: 0;
     padding: 0;
     height: auto;
     width: 100%;
-    background:linear-gradient( rgba(171, 168, 178, 0.7),rgba(171, 168, 178, 0.7)), url('../assets/friendsCards.jpg');
+    background:linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../assets/friendsCards.jpg');
     background-size: 50%;
 
     form{
@@ -61,6 +121,8 @@
                 letter-spacing: 4px;
                 font-size: 50px;
                 line-height: 2em;
+                margin-bottom: 5%;
+                color: #F0C808;
 
                 span{
                     color: #FCFCFC;
@@ -71,23 +133,27 @@
 
         .container{
             text-align: center;
-            padding: 10px;
+            border-radius: 20px;
+            padding: 15px;
             display: flex;
             margin: auto;
             justify-content: center;
             flex-direction: row;
             flex-wrap: wrap;
             margin-bottom: 20%;
+            margin-top: 0;
+            background-color: rgba(252, 252, 252, 0.5);
                     
             input[type="radio"]{
                 display: none;
             }
 
             label{
-                font-family: 'Roboto', sans-serif;
+                font-family: $roboto;
                 margin: 20px;
                 text-transform: uppercase;
                 padding: 20px 30px;
+                font-size: 17px;
                 border: 2px solid transparent;
                 border-radius: 20px; 
                 transition: 0.5s ease-in-out;
@@ -102,7 +168,7 @@
 
             }
             label:hover{
-                border: 2px solid #FFE503;
+                border: 2px solid #000EFF;
                 cursor: pointer
             }
             input[type="radio"]:checked+label{
