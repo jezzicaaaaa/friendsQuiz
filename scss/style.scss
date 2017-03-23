@@ -20,7 +20,7 @@
     .home-content{
         margin-top: 0;
         margin: 0 auto;
-        padding: 20px;;
+        padding: 10px;;
         display: flex;
         flex-direction: column;
 
@@ -28,7 +28,7 @@
             margin-top: 0;
             font-family: $roboto;
             font-size: 30px;
-            padding-top: 25%;
+            padding-top: 20%;
             color: #E9F1F7;
             text-transform: uppercase;
             font-weight: 0;
@@ -37,48 +37,15 @@
         img{
             margin: 30px;
         }
-        // .friends{
-        //     font-family: $friendsFont;
-        //     letter-spacing: 1em;
-        //     font-size: 70px;
-        //     color: #E9F1F7;
-        // }
-            
-        // #r:before, #e:after{
-        //     background: #ED213A;
-        //     content: "\A";
-        //     width: 10px;
-        //     height: 10px;
-        //     border-radius: 50%;
-        //     display: inline-block;
-        //     margin: 0 10px;
-        // }
-        // #r:after, #d:before{
-        //     background: #00ABE7;
-        //     content: "\A";
-        //     width: 10px;
-        //     height: 10px;
-        //     border-radius: 50%;
-        //     display: inline-block;
-        //     margin: 0 10px;
-        // }
-        // #e:before, #d:after{
-        //     background: #FABC16;
-        //     content: "\A";
-        //     width: 10px;
-        //     height: 10px;
-        //     border-radius: 50%;
-        //     display: inline-block;
-        //     margin-top: -0%;
 
         .home-btn{
             margin: 0 auto;
-            margin-top: 10%;
+            margin-top: 5%;
             font-family: $roboto;
             text-transform: uppercase;
             background-color: transparent;
             letter-spacing: 1px;
-            box-shadow: 10px 10px 5px rgba(192,192,192,0.2);
+            // box-shadow: 8px 8px 5px rgba(192,192,192,0.2);
             padding: 1.05rem 2.75rem;
             color: #F0C808;
             font-size: 1.2rem;
@@ -92,6 +59,9 @@
         .home-btn:hover{
             color: #FFF;
             border: .2rem solid #F0C808;
+        }
+        .home-btn:focus{
+            outline: none;
         }
     }
 
@@ -109,7 +79,7 @@
 
     form{
         padding: 20px;
-    
+        
         p:first-child{
             margin-top: 0;
             padding-top: 5%;
@@ -133,7 +103,7 @@
 
         .container{
             text-align: center;
-            border-radius: 20px;
+            border-radius: 5px;
             padding: 15px;
             display: flex;
             margin: auto;
@@ -142,7 +112,7 @@
             flex-wrap: wrap;
             margin-bottom: 20%;
             margin-top: 0;
-            background-color: rgba(252, 252, 252, 0.5);
+            background-color: rgba(0, 0, 0, 0.8);
                     
             input[type="radio"]{
                 display: none;
@@ -155,10 +125,11 @@
                 padding: 20px 30px;
                 border: 3px solid transparent;
                 font-size: 17px;
-                border-radius: 20px; 
+                border-radius: 10px; 
                 transition: 0.5s ease-in-out;
                 width: auto;
                 line-height: 1.2em;
+                color: white;
 
 
                 img{
@@ -168,13 +139,14 @@
 
             }
             label:hover{
-                border: 3px solid #FFE503;
+                border: 3px solid #FCFCFC;
                 cursor: pointer
             }
             input[type="radio"]:checked+label{
                 transition: 0.5s ease-in-out;
                 border: 3px solid #E03735;
                 background-color: white;
+                color: black;
             }
             
         }

@@ -69,10 +69,27 @@ function submitAnswers(){
 
     }
     
-    
-    alert('ross total is' + rossTotal + 'rachel total is' + rachelTotal);
-    return false;
+    // function finalResults(){
+    //     var answer = Math.max(rossTotal,rachelTotal,monicaTotal,chandlerTotal,joeyTotal,phoebeTotal);
+    //     alert(answer);
+    // }
+
+    function finalResult(){
+        var answer = Math.max(rossTotal, rachelTotal, monicaTotal, chandlerTotal, joeyTotal, phoebeTotal);
+        if( answer == rossTotal){
+            alert('you are ross');
+        }else if( answer == rachelTotal){
+            alert('you are rachel');
+        }else if( answer == monicaTotal){
+            alert('you are monica');
+        }else if( answer == chandlerTotal){
+            alert('you are chandler');
+        }else if( answer == joeyTotal){
+            alert('you are joey');
+        }else if( answer == phoebeTotal){
+            alert('you are phoebe');
+        }
+    }
+    finalResult();
 
 }
-
-
