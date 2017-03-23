@@ -4,7 +4,8 @@ $(function(){
     $('.home-btn').click(function(){
         $('.home').hide();
         $('.quiz').fadeIn();
-        $('form').on('submit', function(){
+        $('form').on('submit', function(e){
+            e.preventDefault();
             submitAnswers();
         });
     });
@@ -78,9 +79,9 @@ function submitAnswers(){
     }
     
     function finalResult(){
-        $('.finalResults').style.display="block";
+        $('.finalResults').show();
         var answer = Math.max(rossTotal, rachelTotal, monicaTotal, chandlerTotal, joeyTotal, phoebeTotal);
-        
+        console.log(answer);
         if( answer == rossTotal){
             $('#phoebeResult').hide();
             $('#rossResult').show();
