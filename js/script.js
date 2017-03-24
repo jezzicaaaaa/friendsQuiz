@@ -7,6 +7,10 @@ $(function(){
         $('form').on('submit', function(e){
             e.preventDefault();
             submitAnswers();
+            $('.start-over').on('click', function(){
+                document.location.reload(true);
+
+            });
         });
     });
 });
@@ -81,18 +85,9 @@ function submitAnswers(){
     var joeyFinal = document.getElementById('joeyResult');
     var phoebeFinal = document.getElementById('phoebeResult');
 
-    var span = document.getElementsByClassName('close')[0];
+    var span = document.getElementsByClassName('close');
+    var modal = document.getElementsByClassName('modal');
 
-    // span.onclick.onclick = function() {
-    // modal.style.display = "none";
-    // }
-
-
-    // window.onclick = function(event) {
-    //     if (event.target == modal) {
-    //     modal.style.display = "none";
-    //     }
-    // }
     
     //look which has the highest total of scores then pop modal
     function finalResult(){
@@ -107,6 +102,17 @@ function submitAnswers(){
             $('#chandlerResult').hide();
             $('#joeyResult').hide();
 
+            span[0].onclick = function() {
+        rossFinal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == rossFinal) {
+            rossFinal.style.display = "none";
+            }
+        }
+           
+
         }else if( answer == rachelTotal){
             rachelFinal.style.display = "block";
             $('#phoebeResult').hide();
@@ -114,6 +120,17 @@ function submitAnswers(){
             $('#monicaResult').hide();
             $('#chandlerResult').hide();
             $('#joeyResult').hide();
+
+
+            span[1].onclick = function() {
+        rachelFinal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == rachelFinal) {
+            rachelFinal.style.display = "none";
+            }
+        }
 
         }else if( answer == monicaTotal){
             monicaFinal.style.display = "block";
@@ -123,6 +140,17 @@ function submitAnswers(){
             $('#chandlerResult').hide();
             $('#joeyResult').hide();
 
+
+            span[2].onclick = function() {
+        monicaFinal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == monicaFinal) {
+            monicaFinal.style.display = "none";
+            }
+        }
+
         }else if( answer == chandlerTotal){
             chandlerFinal.style.display = "block";
             $('#phoebeResult').hide();
@@ -130,6 +158,17 @@ function submitAnswers(){
             $('#rachelResult').hide();
             $('#monicaResult').hide();
             $('#joeyResult').hide();
+
+
+            span[3].onclick = function() {
+        chandlerFinal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == chandlerFinal) {
+            chandlerFinal.style.display = "none";
+            }
+        }
 
         }else if( answer == joeyTotal){
             joeyFinal.style.display = "block";
@@ -139,6 +178,17 @@ function submitAnswers(){
             $('#monicaResult').hide();
             $('#chandlerResult').hide();
 
+
+            span[4].onclick = function() {
+        joeyFinal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == joeyFinal) {
+            joeyFinal.style.display = "none";
+            }
+        }
+
         }else if( answer == phoebeTotal){
             phoebeFinal.style.display = "block";
             $('#rossResult').hide();
@@ -147,24 +197,20 @@ function submitAnswers(){
             $('#chandlerResult').hide();
             $('#joeyResult').hide();
 
-        }
-        span.onclick.onclick = function() {
-    modal.style.display = "none";
-    }
 
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-        modal.style.display = "none";
+            span[5].onclick = function() {
+        phoebeFinal.style.display = "none";
         }
-    }
+
+        window.onclick = function(event) {
+            if (event.target == phoebeFinal) {
+            phoebeFinal.style.display = "none";
+            }
+        }
+
+        }
+       
     }
     finalResult();
 
-}
-            // $('#rossResult).fadeIn();
-            //             $('#rachelResult').fadeIn();
-            //                        $('#monicaResult').fadeIn();
-            //                                    $('#chandlerResult').fadeIn();
-            //                                                $('#joeyResult').fadeIn();
-            //                                                            
+}                                                      

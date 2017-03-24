@@ -45,7 +45,7 @@
             text-transform: uppercase;
             background-color: transparent;
             letter-spacing: 1px;
-            // box-shadow: 8px 8px 5px rgba(192,192,192,0.2);
+            box-shadow: 5px 5px 2px rgba(192,192,192,0.2);
             padding: 1.05rem 2.75rem;
             color: #F0C808;
             font-size: 1.2rem;
@@ -86,20 +86,20 @@
         }
 
         p{
-                font-family: $friendsFont;
-                text-transform: uppercase;
-                letter-spacing: 4px;
-                font-size: 50px;
-                line-height: 2em;
-                margin-bottom: 5%;
-                color: #F0C808;
+            font-family: $friendsFont;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 50px;
+            line-height: 2em;
+            margin-bottom: 5%;
+            color: #F0C808;
 
-                span{
-                    color: #FCFCFC;
-                    border-bottom: 5px solid #000EFF;
-                }
-
+            span{
+                color: #FCFCFC;
+                border-bottom: 5px solid #000EFF;
             }
+
+        }
 
         .container{
             text-align: center;
@@ -165,7 +165,7 @@
             text-transform: uppercase;
             background-color: transparent;
             letter-spacing: 1px;
-            // box-shadow: 8px 8px 5px rgba(192,192,192,0.2);
+            box-shadow: 5px 5px 2px rgba(192,192,192,0.2);
             padding: 1.05rem 2.75rem;
             color: #F0C808;
             font-size: 1.2rem;
@@ -188,11 +188,13 @@
 
 }
 .finalResults{
+
     .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-bottom: 3%;
+    padding-top: 1%; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -203,50 +205,204 @@
 
         .modal-content {
             position: relative;
-            background-color: #fefefe;
+            background-color: #fcfcfc;
             margin: auto;
             padding: 0;
             border: 1px solid #888;
-            width: 80%;
+            width: 60%;
+            height: auto;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
             -webkit-animation-name: animatetop;
             -webkit-animation-duration: 0.4s;
             animation-name: animatetop;
             animation-duration: 0.4s;
 
-            /* The close button */
-            .close{
-                color: white;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-            }
-
-            .close:hover,
-            .close:focus {
-                color: #000;
-                text-decoration: none;
-                cursor: pointer;
-            }
-
+            
             .modal-header {
+                text-align: center;
                 padding: 2px 16px;
-                background-color: #5cb85c;
-                color: white;      
+                background-color: grey;
+                color: white;  
+
+
+                h1{
+                    font-family: $friendsFont;
+                    color: black;
+                    letter-spacing: 0.5em;
+                }
+            
+            
+
+                /* The close button */
+                .close{
+                    color: white;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+
+                .close:hover,
+                .close:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+            .modal-body{
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+
+                
+
+                img{
+                    width: 50%;
+                    height: 20%;
+                    float: left;
+                    margin-right: 3%;
+                    text-align: center;
+                    margin: auto;
+                    margin-bottom: 2%;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                p{
+                    margin: auto;
+                    margin-top: 0;
+                    padding: 2%;
+                    line-height: 150%;
+                    font-size: 18px;
+                    font-family: $roboto;
+
+                }
+            }
+            .modal-footer{
+                padding: 15px;
+                background-color: grey;
+                height: 50%;
+                display: flex;
+
+                button, a{
+                    margin: 0 auto;
+                    font-family: $roboto;
+                    text-transform: uppercase;
+                    background-color: transparent;
+                    letter-spacing: 1px;
+                    box-shadow: 5px 5px 2px rgba(192,192,192,0.2);
+                    padding: 1.05rem 2.75rem;
+                    color: #F0C808;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    border-radius: 12rem;
+                    border: .2rem solid #FFF;
+                    -webkit-transition: color .3s,border .3s;
+                    transition: color .3s,border .3s;
+                    justify-content: space-around;
+                
+                }
+                a{
+                    text-decoration: none;
+                }
+                button:focus{
+                    outline: none;
+                }
+                a:focus{
+                    outline: none;
+                }
+                button:hover{
+                    color: #FFF;
+                    border: .2rem solid #F0C808;
+                }
+                a:hover{
+                    color: #FFF;
+                    border: .2rem solid #F0C808;
+                }
+            }
+
+                /* Add Animation */
+            @-webkit-keyframes animatetop {
+                from {top:-300px; opacity:0} 
+                to {top:0; opacity:1}
+            }
+
+            @keyframes animatetop {
+                from {top:-300px; opacity:0}
+                to {top:0; opacity:1}
+            }
+
+            @-webkit-keyframes animatebottom {
+                from {bottom:-300px; opacity:0} 
+                to {bottom:0; opacity:1}
+            }
+
+            @keyframes animatebottom {
+                from {bottom:-300px; opacity:0}
+                to {bottom:0; opacity:1}
             }
         }
     }
 }
+@media(max-width: 1180px){
 
-            
+}
+@media(max-width:940px){
+    .quiz{
+        form{
+            label{
+                font-size: 15px;
+            }
+        }
+    }
+    .finalResults{
+        .modal{
+            .modal-content{
+                width: 90%;
+                .modal-header{
+                    h1{
+                        line-height: 130%;
+                    }
+                }
 
-// /* Add Animation */
-// @-webkit-keyframes animatetop {
-//     from {top:-300px; opacity:0} 
-//     to {top:0; opacity:1}
-// }
+                .modal-body{
+                    
+                    img{
+                        
+                    }
+                }
 
-// @keyframes animatetop {
-//     from {top:-300px; opacity:0}
-//     to {top:0; opacity:1}
-// }
+            }
+        }
+    }
+}
+@media( max-width: 767px){
+    .quiz{
+        form{
+            p{
+                font-size: 40px;
+            }
+            .container{
+                display: block;
+                label{
+                    display: inline-block;
+                    width: 60%;
+                }
+            }
+        }
+    }
+    .finalResults{
+        .modal{
+            .modal-content{
+                .modal-footer{
+                    a, button{
+                        text-align: center;
+                        font-size: 1rem;
+                        padding: 0.95rem 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
