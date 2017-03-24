@@ -41,10 +41,6 @@ function submitAnswers(){
     var chandler = ['b','c','f','f','b','c','c','d','f','a','f'];
     var joey = ['b','d','e','e','c','f','a','f','b','b','c'];
     var phoebe = ['b','e','a','c','a','d','b','b','e','f','e'];
-    
-
-
-    var rossFinal = document.getElementById('rossResult');
 
     //alert when a question is left blanked
     for(var i= 1; i <= 11; i++){
@@ -55,7 +51,7 @@ function submitAnswers(){
     }
 
 
-
+    //if the radio is checked on +1 to the friends char
     for(var i = 1; i <= 11; i++){
         if(eval('q' + i) == ross[i - 1]){
             rossTotal++;
@@ -78,52 +74,73 @@ function submitAnswers(){
 
     }
     
+    var rossFinal = document.getElementById('rossResult');
+    var rachelFinal = document.getElementById('rachelResult');
+    var monicaFinal = document.getElementById('monicaResult');
+    var chandlerFinal = document.getElementById('chandlerResult');
+    var joeyFinal = document.getElementById('joeyResult');
+    var phoebeFinal = document.getElementById('phoebeResult');
+
+    var span = document.getElementsByClassName('close')[0];
+
+    // span.onclick.onclick = function() {
+    // modal.style.display = "none";
+    // }
+
+
+    // window.onclick = function(event) {
+    //     if (event.target == modal) {
+    //     modal.style.display = "none";
+    //     }
+    // }
+    
+    //look which has the highest total of scores then pop modal
     function finalResult(){
         $('.finalResults').show();
         var answer = Math.max(rossTotal, rachelTotal, monicaTotal, chandlerTotal, joeyTotal, phoebeTotal);
-        console.log(answer);
+
         if( answer == rossTotal){
+            rossFinal.style.display = "block";
             $('#phoebeResult').hide();
-            $('#rossResult').show();
             $('#rachelResult').hide();
             $('#monicaResult').hide();
             $('#chandlerResult').hide();
             $('#joeyResult').hide();
 
         }else if( answer == rachelTotal){
+            rachelFinal.style.display = "block";
             $('#phoebeResult').hide();
             $('#rossResult').hide();
-            $('#rachelResult').fadeIn();
             $('#monicaResult').hide();
             $('#chandlerResult').hide();
             $('#joeyResult').hide();
 
         }else if( answer == monicaTotal){
+            monicaFinal.style.display = "block";
             $('#phoebeResult').hide();
             $('#rossResult').hide();
             $('#rachelResult').hide();
-            $('#monicaResult').fadeIn();
             $('#chandlerResult').hide();
             $('#joeyResult').hide();
 
         }else if( answer == chandlerTotal){
+            chandlerFinal.style.display = "block";
             $('#phoebeResult').hide();
             $('#rossResult').hide();
             $('#rachelResult').hide();
             $('#monicaResult').hide();
-            $('#chandlerResult').fadeIn();
             $('#joeyResult').hide();
 
         }else if( answer == joeyTotal){
+            joeyFinal.style.display = "block";
             $('#phoebeResult').hide();
             $('#rossResult').hide();
             $('#rachelResult').hide();
             $('#monicaResult').hide();
             $('#chandlerResult').hide();
-            $('#joeyResult').fadeIn();
 
         }else if( answer == phoebeTotal){
-            $('#phoebeResult').fadeIn();
+            phoebeFinal.style.display = "block";
             $('#rossResult').hide();
             $('#rachelResult').hide();
             $('#monicaResult').hide();
@@ -131,6 +148,16 @@ function submitAnswers(){
             $('#joeyResult').hide();
 
         }
+        span.onclick.onclick = function() {
+    modal.style.display = "none";
+    }
+
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+    }
     }
     finalResult();
 
